@@ -1,2 +1,8 @@
-# psych-bagrut-glossary
-האפליקציה להכנה לבגרות פסיכולוגיה תשפ"ז · Psychology bagrut study app: glossary cards, quiz, exam questions
+# האפליקציה להכנה לבגרות פסיכולוגיה תשפ"ז
+
+אפליקציית לימוד לבגרות בפסיכולוגיה: מילון מושגים בכרטיסיות, תרגול, בוחן ושאלות בגרות.
+
+**לינק לאתר החי:** https://psych-bagrut-glossary.sites.tab.bot/
+
+---
+אתר סטטי (HTML/CSS/JS). כדי להריץ מקומית: לפתוח את `index.html` בדפדפן, או להפעיל שרת פשוט בתיקייה.

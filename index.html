@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>האפליקציה להכנה לבגרות פסיכולוגיה תשפ"ז</title>
+<meta name="description" content="מונחון אינטראקטיבי לבגרות בפסיכולוגיה: כרטיסיות, מבחנים קצרים, שאלות בגרות ומעקב התקדמות.">
+<meta property="og:title" content="האפליקציה להכנה לבגרות פסיכולוגיה תשפ&quot;ז">
+<meta property="og:description" content="כרטיסיות מתהפכות, מבחן קצר לכל פרק, שאלות בגרות 2021–2026 ומעקב התקדמות">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="iconbtn" id="backBtn" aria-label="חזרה" hidden>→</button>
+  <a class="brand" href="#/"><img src="logo.png" alt="" class="brand-logo"> בגרות פסיכולוגיה תשפ"ז</a>
+  <button class="iconbtn" id="pagesBtn" aria-label="טבלת עמודים בספר">📑</button>
+  <button class="iconbtn" id="infoBtn" aria-label="על האפליקציה">ℹ️</button>
+  <button class="iconbtn" id="searchBtn" aria-label="חיפוש מושג">🔍</button>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="foot">
+  <p><a class="booklet" href="https://docs.google.com/document/d/1do0l7wqzj71I2_IATCpnRkQpgdzZve-mWKoURwV8CM0/edit?usp=sharing" target="_blank" rel="noopener">📘 לחוברת המונחון המלאה</a></p>
+  <p>המונחון מתבסס על הסיכומים של עדי שואב</p>
+  <p class="muted">העמודים מתייחסים לספר „פסיכולוגיה זה כל הסיפור”, כרך 1 וכרך 2</p><p class="muted">ההתקדמות נשמרת רק במכשיר שלכם</p>
+</footer>
+<div id="overlay" class="overlay" hidden></div>
+<script src="data.js"></script>
+<script src="qwords.js"></script>
+<script src="app.js"></script>
+<div id="intro" class="intro" hidden role="dialog" aria-modal="true" aria-labelledby="introTitle">
+  <div class="intro-card">
+    <img src="logo.png" alt="" class="intro-logo">
+    <h1 id="introTitle">ברוכים הבאים לאפליקציה להכנה לבגרות פסיכולוגיה תשפ"ז 🧠</h1>
+    <p class="intro-sub">כל המושגים, המחקרים ושאלות הבגרות בפסיכולוגיה, במקום אחד ובדרך כיפית</p>
+    <ul class="intro-list">
+      <li><b>🗺️ פרקים:</b> בוחרים פרק מהמסך הראשי, ובתוכו את תתי הנושאים</li>
+      <li><b>🃏 כרטיסיות:</b> מושג מקדימה, לוחצים והכרטיס מתהפך להסבר</li>
+      <li><b>✅ 🔁 מעקב:</b> מסמנים "יודע/ת" או "לחזור", ופס ההתקדמות מתמלא</li>
+      <li><b>🎯 מבחן:</b> 10 שאלות לכל פרק, עם משוב מיידי. בכל סיבוב שאלות אחרות</li>
+      <li><b>📝 שאלות בגרות:</b> שאלות מבחינות קודמות לתרגול, לפי שנה ונושא</li>
+      <li><b>🖍️ מירקור מילות שאלה:</b> לוחצים על מילה מסומנת ורואים מה צריך לעשות</li>
+      <li><b>🔬 מחקרים:</b> כל המחקרים לכל הנושאים, עם מבחן מחקרים משלהם</li>
+      <li><b>🧰 כלים ומשאבים:</b> הבגרובוט, איך לענות על שאלות עמ"ר, קובץ ההכנה ועוד</li>
+      <li><b>🔍 חיפוש:</b> מוצאים כל מושג בשנייה</li>
+    </ul>
+    <p class="intro-tip">💡 טיפ: ההתקדמות נשמרת בטלפון או במחשב שבו לומדים</p>
+    <button id="introGo" class="intro-go">יאללה, מתחילים! 🚀</button>
+  </div>
+</div>
+<script src="intro.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>
